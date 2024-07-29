@@ -6,4 +6,8 @@
     
     <p>{{note.text}}</p>
 </div>
+<p></p>
+<a href='{%  url "notes.list" %}' class='btn btn-secondary '>Back</a> <!-- creates back button to list page -->
+<a href='{%  url "notes.update" pk=note.id %}' class='btn btn-secondary'>Edit</a> <!-- creates button to edit page -->
+<a href='{%  url "notes.delete" pk=note.id %}' class='btn btn-danger'>Delete</a> <!-- creates button to delete page -->
 {% endblock %}
